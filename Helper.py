@@ -32,9 +32,9 @@ def randomString():
 
 
 def menuQuery(query):
-    conn = mysql.connector.connect(user='MasterAdmin19', password='Ro5?dLz$MP!j9tB9',
-                                   host='rds-mysql-cps4951.c4bnum2utzbm.us-east-1.rds.amazonaws.com',
-                                   database='Testing')
+    conn = mysql.connector.connect(user='[DB User Here]', password='[DB Password Here]',
+                                   host='[DB Host URI Here]',
+                                   database='[DB Name Here]')
     cursor = conn.cursor()
 
     cursor.execute(query)
@@ -51,9 +51,9 @@ def menuQuery(query):
 
 
 def imageQuery(query, number):
-    conn = mysql.connector.connect(user='MasterAdmin19', password='Ro5?dLz$MP!j9tB9',
-                                   host='rds-mysql-cps4951.c4bnum2utzbm.us-east-1.rds.amazonaws.com',
-                                   database='Testing')
+    conn = mysql.connector.connect(user='[DB User Here]', password='[DB Password Here]',
+                                   host='[DB Host URI Here]',
+                                   database='[DB Name Here]')
     cursor = conn.cursor()
 
     cursor.execute(query)
